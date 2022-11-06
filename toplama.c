@@ -2,15 +2,15 @@
 
 int main()
 {
-    int n,k,toplam;
-    k=1;
-    scanf("%d",n);
-    for(k=1;k<=n;k++)
+    int n;
+    printf("n sayısını giriniz:\n");
+    scanf("%d", &n);
+    float toplam=0;
+    for(int k=1;k<=n;k++)
     {
-       toplam=(k+1)/k;
-       printf("%f \n",toplam);
+       toplam+=(k+1.0)/k;
     }
-
+printf("%f \n",toplam);
 
 return 0;
 }
